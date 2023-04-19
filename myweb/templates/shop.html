@@ -1,0 +1,218 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        h1 {text-align: center;}
+        h2 {text-align: center;}
+        h3 {text-align: center;}
+        h4 {text-align: center;}
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="C:\Users\Agata\Dropbox\AS22110004475\2 - Introduction to Software Engineering\L2T17\shop items\styles.css" rel="stylesheet" type="text/css">
+    <title>lego shop</title>
+</head>
+<body>
+    <div class="container-md border">
+        <div class="row">
+            <div class="col-md-12">
+                <h1> Welcome to lego shop</h1>
+                <h2> Here you will find 9 biggest LEGO construction sets</h2><br><br>
+            </div>
+           
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img src="{% static 'assets/World Map.jpg' %}" clas="img-fluid" alt="LEGO World Map" >
+      <div class="card-body">
+        <h5 class="card-title">LEGO World Map</h5>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">LEGO World Map 31203</li>
+              <li class="list-group-item">Number of pieces: 11695</li>
+              <li class="list-group-item">Price: £214.99 </li>
+          </ul>
+        <div class="card-body">
+            <button class="btn btn-primary" type="submit">Buy Me!</button>
+        </div>
+    </div>
+    </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="{% static 'assets/Eifel tower.jpg' %}" alt="Eiffel Tower Box">
+      <div class="card-body">
+        <h5 class="card-title">LEGO Eiffel Tower</h5>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">LEGO Eiffel Tower 10307</li>
+      <li class="list-group-item">Number of pieces: 10001</li>
+      <li class="list-group-item">Price: £554.99  </li>
+    </ul>
+    <div class="card-body">
+      <button class="btn btn-primary" type="submit">Buy Me!</button>
+  </div>
+  </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="{% static 'assets/Titanic.jpg' %}" alt="LEGO Titanic Box">
+      <div class="card-body">
+        <h5 class="card-title">LEGO Titanic</h5>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">LEGO Titanic 10294</li>
+      <li class="list-group-item">Number of pieces: 9090 </li>
+      <li class="list-group-item">Price: £589.99</li>
+    </ul>
+    <div class="card-body">
+      <button class="btn btn-primary" type="submit">Buy Me!</button>
+  </div>
+</div>
+</div>
+
+<!-- <div class="row row-cols-1 row-cols-md-3 g-4"> -->
+<div class="col">
+<div class="card h-100">
+<img src="{% static 'assets/colloseum.png' %}" alt="LEGO Colosseum">
+<div class="card-body">
+    <h5 class="card-title">LEGO Colosseum</h5>
+    </div>
+    <ul class="list-group list-group-flush">
+    <li class="list-group-item">LEGO Colosseum 10276</li>
+    <li class="list-group-item">Number of pieces: 9,036 </li>
+    <li class="list-group-item">Price: £474.99</li>
+    </ul>
+    <div class="card-body">
+        <button class="btn btn-primary" type="submit">Buy Me!</button>
+    </div>
+</div>
+</div>
+<div class="col">
+<div class="card h-100">
+  <img src="{% static 'assets/Millenium Falcon.jpg' %}" alt="LEGO Titanic Box">
+  <div class="card-body">
+  <h5 class="card-title">LEGO Millennium Falcon™</h5>
+  </div>
+  <ul class="list-group list-group-flush">
+      <li class="list-group-item">LEGO Millennium Falcon 75192</li>
+      <li class="list-group-item">Number of pieces: 7,541</li>
+      <li class="list-group-item">Price: £734.99</li>
+      </ul>
+  <div class="card-body">
+      <button class="btn btn-primary" type="submit">Buy Me!</button>
+  </div>
+</div>
+</div>
+<div class="col">
+  <div class="card h-100">
+      <img src="{% static 'assets/ATAT.jpg' %}" alt="LEGO Titanic Box">
+      <div class="card-body">
+      <h5 class="card-title">LEGO AT-AT</h5>
+      </div>
+      <ul class="list-group list-group-flush">
+          <li class="list-group-item">LEGO AT-AT 75513</li>
+          <li class="list-group-item">Number of pieces: 6,785</li>
+          <li class="list-group-item">Price: £734.99</li>
+          </ul>
+      <div class="card-body">
+          <button class="btn btn-primary" type="submit">Buy Me!</button>
+      </div>
+  </div>
+  </div>
+  <div class="col">
+     <div class="card h-100">
+        <img src="{% static 'assets/Razor Crest.jpg' %}" alt="LEGO Razor Crest">
+        <div class="card-body">
+        <h5 class="card-title">LEGO Razor Crest</h5>
+        </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">LEGO Razor Crest 75331</li>
+            <li class="list-group-item">Number of pieces: 6,187</li>
+            <li class="list-group-item">Price: £519.99</li>
+            </ul>
+          <div class="card-body">
+            <button class="btn btn-primary" type="submit">Buy Me!</button>
+          </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="{% static 'assets/Rivendell.jpg' %}" alt="LEGO LOTR Rivendell">
+          <div class="card-body">
+            <h5 class="card-title">LEGO Millennium Falcon™</h5>
+            </div>
+              <ul class="list-group list-group-flush">
+              <li class="list-group-item">LEGO Lord Of The Rings: Rivendell 10316</li>
+              <li class="list-group-item">Number of pieces: 6,167</li>
+              <li class="list-group-item">Price: £429.99</li>
+              </ul>
+            <div class="card-body">
+                <button class="btn btn-primary" type="submit">Buy Me!</button>
+            </div>
+          </div>
+        </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="{% static 'assets/Harry Potter Castle.jpg'%}" alt="LEGO Hogwarts Castle">
+        <div class="card-body">
+            <h5 class="card-title">LEGO Hogwarts™ Castle</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">LEGO Hogwarts™ Castle</li>
+                <li class="list-group-item">Number of pieces: 6,020</li>
+                <li class="list-group-item">Price: £409.99</li>
+            </ul>
+          <div class="card-body">
+              <button class="btn btn-primary" type="submit">Buy Me!</button>
+            </div>
+         </div>
+      </div>
+
+             
+            
+            </div>
+      </div>
+      </div>
+      
+<footer class="bg-light text-center ">
+  <div class="container p-4">
+    <section class="mb-4">
+      <img src="{% static 'assets/lego shop.jpg' %}" class="img-thumbnail" height="100px" width="100px">
+    <section class="">
+      <form action="">
+        <div class="row d-flex justify-content-center">
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Sign up for our newsletter</strong>
+            </p>
+          </div>
+          <div class="col-md-5 col-12">
+            <div class="form-outline mb-4">
+              <input type="email" id="form5Example2" class="form-control" />
+              <label class="form-label" for="form5Example2">Email address</label>
+            </div>
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-primary mb-4">
+              Subscribe
+            </button>
+          </div>
+          <div class= "row">
+            <div src="{% static 'assets/lego shop.jpg' %}">
+          </div>
+        </div>
+      </form>
+    </section>
+      </div>
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    © 2023 Copyright:
+    <a class="text-dark" href="https://lego_shop/">lego_shop.com</a>
+  </div>
+</footer>
+
+</html>

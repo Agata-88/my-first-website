@@ -1,0 +1,96 @@
+{% load static %}
+<DOCTYPE html>
+<html lang="en">
+    <style>
+        h1 {text-align: center;}
+        h2 {text-align: center;}
+        h3 {text-align: center;}
+        h4 {text-align: center;}
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="C:\Users\Agata\Dropbox\AS22110004475\2 - Introduction to Software Engineering\L2T17\shop items\styles.css" rel="stylesheet" type="text/css">
+    <title>lego shop</title>
+</head>
+<body>
+    <div class="container-md border">
+        <div class="row">
+            <div class="col-md-9 background">
+                <h1> Welcome to lego trivia</h1>
+                <h2> Where you will find few things you probably didn't know about LEGO</h2><br><br>
+            </div>
+            <div class="col-md-3">
+                <button><a href="{% url 'register' %}"></a>Register to get access to our lego shop</button>
+                <br>
+                <br>
+                <button><a href="{% url 'login' %}">Login to get access to our Lego shop</a></button><br>
+            </div>
+          </div>
+<h4>The name ‘LEGO’ is an abbreviation of the two Danish words “leg godt”, meaning “play well”.</h4><br>
+<h5> On March 5th 2022 LEGO has officially opened its corporate headquarters in Billunds, Denmark. This marked end of the first phase of construction with new phase planned to start in 2023.</h5><br>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img src="{% static 'assets/headquarters1.jpg' %}" clas="img-fluid" alt="LEGO headquarters">
+      <div class="card-body">
+      </div>
+    </div>
+    </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="{% static 'assets/headquarters2.jpg' %}" alt="Lego headquarters">
+      <div class="card-body">
+    </div>
+  </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="{% static 'assets/headquarters3.jpg' %}" alt="LEGO Headquarters">
+</div>
+</div>
+      </div>
+    </div><br>
+      <h3>
+     <a href="{% url 'history' %}">Lego history and timeline</a><br>
+      <a href = "{% url 'links' %}">Lego on youtube</a><br>
+<footer class="bg-light text-center ">
+  <div class="container p-4">
+    <section class="mb-4">
+      <img src="{% static 'assets/lego shop.jpg' %}" class="img-thumbnail" height="100px" width="100px">
+    <section class="">
+      <form action="">
+        <div class="row d-flex justify-content-center">
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Sign up for our newsletter</strong>
+            </p>
+          </div>
+          <div class="col-md-5 col-12">
+            <div class="form-outline mb-4">
+              <input type="email" id="form5Example2" class="form-control" />
+              <label class="form-label" for="form5Example2">Email address</label>
+            </div>
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-primary mb-6">
+              Subscribe
+            </button>
+          </div>
+          <div class= "row">
+            <div src="shop items\lego shop.jpg">
+          </div>
+        </div>
+      </form>
+    </section>
+      </div>
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    © 2023 Copyright:
+    <a class="text-dark" href="https://lego_shop/">lego_shop.com</a>
+  </div>
+</footer>
+
+</html>
